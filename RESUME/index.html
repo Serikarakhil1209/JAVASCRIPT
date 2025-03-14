@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name1=document.createElement("h1");
+        name1.innerText="serikar akhil";
+        var body=document.querySelector("body")
+        body.style.marginLeft="50px";
+        body.style.marginRight="50px";
+        body.append(name1)
+
+        
+        // console.log(name1);
+        name1.style.textAlign="center";
+        var nav_items=document.createElement("ul")
+        nav_items.innerHTML="<li>serikarakhil5@gmail.com</li> <li>9515094863</li> <li> github </li> <li>linkedin</li>";
+        console.log(nav_items);
+        body.append(nav_items);
+        nav_items.style.display="flex";
+        nav_items.style.justifyContent="space-between";
+        nav_items.style.listStyle="none";
+        var p_tag=document.createElement("p");
+        p_tag.innerText="Enthusiastic and technically skilled recent graduate with a Bachelor of Technology inInformation Technology. Eager to contribute my knowledge and skills in a dynamic ITenvironment, keen on learning and growing within a progressive organization.";
+        p_tag.style.paddingLeft="20px";
+        body.append(p_tag);
+
+        var h3_tag=document.createElement("h3")
+        h3_tag.innerText="Education"
+        var hr_line=document.createElement("hr")
+        body.append(h3_tag,hr_line);
+
+        var education_firstline=document.createElement("p");
+        education_firstline.innerText="Bachelor of Technology | Information Technology 2020 - 2024"
+        body.append(education_firstline)
+
+        var education_thirdline=document.createElement("p");
+        education_thirdline.innerText="DRK, Narsapur 7.83 CGPA"
+        body.append(education_thirdline)
+
+        var education_secondline=document.createElement("p");
+        education_secondline.innerText="Intermediate | MPC 2018 - 2020"
+        body.append(education_secondline)
+
+        var education_fouthline=document.createElement("p");
+        education_fouthline.innerText="Narayana Junior College, Kukatpally 945/1000"
+        body.append(education_fouthline)
+
+        var education_fifthline=document.createElement("p");
+        education_fifthline.innerText="SSC 2017-2018"
+        body.append(education_fifthline)
+
+        var education_sixthline=document.createElement("p");
+        education_sixthline.innerText="Sri Raja Rajeshwari High School, Toopran 9.0 GPA"
+        body.append(education_sixthline)
+
+        var h4_tag=document.createElement("h3")
+        h4_tag.innerText="Projects"
+        var hr=document.createElement("hr")
+        body.append(h4_tag,hr)
+
+        var h2_tag=document.createElement("h4")
+        h2_tag.innerText="Helmet And Number Detection:(Open CV, CNN Model):"
+        body.append(h2_tag)
+        var paragraph=document.createElement("p")
+        paragraph.innerText="Developed a deep learning-based system using OpenCV, YOLOv3, and CNN models for helmet and number plate detection and recognition. This project aims to enhance road safety and improve law enforcement efficiency through accurate and real-time identification of traffic violations"
+        body.append(paragraph)
+
+        var h4_tag=document.createElement("h4")
+        h4_tag.innerText="Password Generator(HTML, CSS, JavaScript):"
+        body.append(h4_tag)
+        var paragraph1=document.createElement("p")
+        paragraph1.innerText="This application will generate strong and secure passwords based on user preferences, such as password length, Include Uppercase & Lowercase Letters and character types. It aims to provide a convenient tool for users to generate random passwords that are difficult to guess and enhance their online security."
+        body.append(paragraph1)
+
+        var h5_tag=document.createElement("h3")
+        h5_tag.innerText="Skills"
+        var hr1=document.createElement("hr")
+        body.append(h5_tag,hr1)
+
+        var h9_tag=document.createElement("h4")
+        h9_tag.innerText="Technical"
+        body.append(h9_tag)
+
+        var foo=document.createElement("p");
+        foo.innerText="Expertise: Core Java, Data Structures and Algorithms, Object Oriented Programming(OOPS), Mysql. Programming Languages: Java, Python, HTML, CSS, JavaScript,"
+        body.append(foo)
+
+        var h8_tag=document.createElement("h3")
+        h8_tag.innerText="Certifications"
+        var hr8=document.createElement("hr")
+        body.append(h8_tag,hr8)
+
+        var h10_tag=document.createElement("p")
+        h10_tag.innerText="Smart Interviews Certification in Data Structures and Algorithms Achieved a recognized certification from Smart Interviews, reflecting a strong understanding and application of complex data structures and algorithmic techniques. Certification Link: Smart Interviews Certificate"
+        body.append(h10_tag)
+
+    </script>
+</body>
+</html>

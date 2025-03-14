@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+ var input1=document.createElement("input")
+ input1.type="Number"
+ document.body.append(input1)
+ var input2=document.createElement("input")
+ input2.type="Number"
+ document.body.append(input2)
+ var input3=document.createElement("input")
+ input3.type="Number"
+ document.body.append(input3)
+
+ let btn1=document.createElement("button")
+ btn1.innerText="addition"
+ document.body.append(btn1)
+ 
+ let btn2=document.createElement("button")
+ btn2.innerText="sub"
+ document.body.append(btn2)
+ 
+ let btn3=document.createElement("button")
+ btn3.innerText="muliplication "
+ document.body.append(btn3)
+ 
+ let btn4=document.createElement("button")
+ btn4.innerText="division"
+ document.body.append(btn4)
+
+ btn1.addEventListener('click',()=>{
+    input3.value= Number(input1.value) + Number(input2.value) 
+    input1.value=""
+    input2.value=""
+ })
+ btn2.addEventListener('click',()=>{
+    input3.value= Number(input1.value) - Number(input2.value) 
+    input1.value=""
+    input2.value=""
+ })
+
+ btn3.addEventListener('click',()=>{
+    input3.value= Number(input1.value) * Number(input2.value)
+    input1.value=""
+    input2.value="" 
+ })
+
+ btn4.addEventListener('click',()=>{
+    input3.value= Number(input1.value) %  Number(input2.value) 
+    input1.value=""
+    input2.value=""
+ })
+
+
+
+ let btn5=document.createElement("button")
+ btn5.innerText="clear "
+ document.body.appendChild(btn5)
+
+ btn5.addEventListener('click',( )=>{
+    input3.value=""
+    input1.value=""
+    input2.value=""
+ })
+
+ 
+
+
+
+ 
+
+
+</script>
+</html>

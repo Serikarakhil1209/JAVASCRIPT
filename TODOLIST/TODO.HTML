@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akhil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+
+        .todo input {
+            width: 70%;
+            padding: 8px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .todo button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-left: 5px;
+            transition: 0.3s;
+        }
+
+        .todo button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        li {
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 8px;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            background-color: #f8f9fa;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 5px;
+        }
+
+        .delete {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .delete:hover {
+            background-color: #c82333;
+        }
+
+        .update {
+            background-color: yellow;
+            color: black;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .update:hover {
+            background-color: yellowgreen;
+        }
+        @media screen and (max-width:720px) {
+            body{
+                width: 100%;
+            }
+            
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: #007bff;">Todo List</h2>
+        <div class="todo">
+            <input type="text" placeholder="Enter a task">
+            <button id="submit">Add</button>
+        </div>
+        <ul></ul>
+    </div>
+</body>
+
+<script>
+    let input = document.querySelector("input");
+    let btn = document.getElementById("submit");
+    let ul = document.querySelector("ul");
+
+    btn.addEventListener("click", () => {
+        if (input.value !== "") {
+            let li = document.createElement("li");
+
+            let taskText = document.createElement("span");
+            taskText.textContent = input.value;
+
+            let deleteBtn = document.createElement("button");
+            deleteBtn.innerText = "Remove";
+            deleteBtn.classList.add("delete");
+
+            let updateBtn = document.createElement("button");
+            updateBtn.innerText = "Update";
+            updateBtn.classList.add("update");
+
+            deleteBtn.addEventListener("click", () => {
+                li.remove();
+            });
+
+            updateBtn.addEventListener("click", () => {
+                input.value = taskText.textContent;
+                li.remove();
+            });
+
+            let buttonsDiv = document.createElement("div");
+            buttonsDiv.classList.add("buttons");
+            buttonsDiv.appendChild(updateBtn);
+            buttonsDiv.appendChild(deleteBtn);
+
+            li.appendChild(taskText);
+            li.appendChild(buttonsDiv);
+
+            ul.appendChild(li);
+            input.value = "";
+        }
+    });
+</script>
+ 
+
+</html>
