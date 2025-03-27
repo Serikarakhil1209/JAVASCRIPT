@@ -22,3 +22,9 @@ for(let i=1;i<=50;i++){
     } 
 }
 console.log(sum)
+
+let i = 1;
+while (i <= 5) {
+    console.log("Count:", i);
+    i++;
+}
