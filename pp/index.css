@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    background-image: url("Background.jpg"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    width: 100%;
+    display: flex;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header img{
+    width: 80%;
+    border: 2px solid rgb(87, 87, 233);
+    box-shadow: 2px 0px 2px 2px ;
+}
+nav{
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f4;
+    }
+    
+    
+    .main {
+        background-image: url("Background.jpg"); 
+        background-size: cover;
+        background-position: center;
+        height: 100vh; 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+    .child1 {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px 40px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 1200px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+  
+    header img {
+        width: 60px;
+        border: 2px solid #5757e9;
+        box-shadow: 2px 0px 2px 2px rgba(87, 87, 233, 0.5);
+        border-radius: 50%;
+    }
+    
+   
+    nav {
+        background-color: transparent;
+        color: white;
+        display: flex;
+        gap: 20px;
+    }
+    
+    nav span {
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    nav span:hover {
+        color: #5757e9;
+    }
+    
+   
+    button {
+        background: linear-gradient(45deg, #5757e9, #1e90ff);
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    
+    button:hover {
+        background: linear-gradient(45deg, #1e90ff, #5757e9);
+        transform: scale(1.05);
+    }
+    
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+
+div button{
+    background-color: blue;
+    color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+
+}

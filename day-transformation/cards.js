@@ -289,7 +289,36 @@ let newArr = data.map((val)=>{
   div.appendChild(p2)
   div.appendChild(button)
   conatainer.appendChild(div)
+})
 
+let nav = document.querySelector("nav")
+
+let filter = document.getElementById("button")
+
+filter.addEventListener("click",()=>{
+
+  let div = document.createElement("div")
+  let checkbox = document.createElement('input');
+        checkbox.type = 'checkbox'; 
+        const label = document.createElement('label');
+        label.style.color="white"
+        label.innerText = "men's clothing";
+        
+ 
+  div.append(label, checkbox)
+
+  nav.appendChild(div)
+
+if (checkbox.checked){
+   div.remove();
+   if(category == checkbox.value){
+   
+   }
+}
+        
+  
+
+        
 
 })
 

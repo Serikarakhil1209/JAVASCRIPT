@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stored Users</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Stored Users</h2>
+    <div class="container" id="usersContainer"></div>
+
+    <script>
+        let usersContainer = document.getElementById("usersContainer");
+
+        // Retrieve stored users
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+
+        if (users.length > 0) {
+            users.forEach(user => {
+                let card = document.createElement("div");
+                card.classList.add("card");
+                card.innerHTML = `
+                    <p><strong>Name:</strong> ${user.name}</p>
+                    <p><strong>Email:</strong> ${user.email}</p>
+                `;
+                usersContainer.appendChild(card);
+            });
+        } else {
+            usersContainer.innerHTML = "<p>No users found.</p>";
+        }
+    </script>
+</body>
+</html>

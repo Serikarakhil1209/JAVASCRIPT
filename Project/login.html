@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Student Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff00ff, #00ffff);
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        h2 {
+            color: white;
+            text-shadow: 2px 2px 5px black;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .login-btn {
+            background: #ff0080;
+            color: white;
+            border: none;
+            margin-right: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .login-btn:hover {
+            background: #00ff7b;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>🔥 Student Login 🔥</h2>
+        <input type="email" placeholder="Email" id="email">
+        <input type="password" placeholder="Password" id="password">
+        <button class="login-btn">Login</button>
+        
+    </div>
+    <script type="module" src="firebase.js"></script>
+</body>
+
+</html>

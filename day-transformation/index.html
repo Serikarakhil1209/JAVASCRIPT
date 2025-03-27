@@ -10,6 +10,17 @@
             margin: 0;
             padding: 0;
         }
+        nav{
+            margin: 0;
+            width: 100%;
+            background-color: black;
+            height: 50px;
+            position: fixed;
+            text-align: center;
+        }
+        nav button{
+            margin-top: 5px;
+        }
 
         #container{
             width: 100%;
@@ -36,10 +47,10 @@
          margin-left: 45%;
          margin-bottom: 10%;
         }
-        .child:hover{
+        /* .child:hover{
             transform: scale(1.2);
             background-color: aliceblue;
-        }
+        } */
 
         @media screen and (max-width: 720px) {
     #container {
@@ -52,15 +63,21 @@
         margin: 15px;
         transition: transform 1s ease-in-out;
     }
-    .child:hover{
+    /* .child:hover{
             transform: scale(1.2);
             background-color: aliceblue;
-        }
+        } */
 }
     </style>
    
 </head>
 <body>
+    <nav>
+        <button id="button">
+            filter
+        </button>
+
+    </nav>
     <div id="container">
         
     </div>
