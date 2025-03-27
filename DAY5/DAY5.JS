@@ -1,3 +1,24 @@
+const student = {
+    name: "Akhil",
+    age: 22,
+    course: "Computer Science"
+};
+
+for (let key in student) {
+    console.log(key + ":", student[key]);
+}
+
+
+const colors = ["Red", "Green", "Blue"];
+
+for (let color of colors) {
+    console.log(color);
+}
+
+
+
+
+
 // for (let i=1;i<=50;i++){
 //     if(i % 5 == 0)
 //     {
