@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .div1{
-            margin-left: 35%;
-            margin-top:20% ;
-        }
-        .el1{
-            width: 50px;
-            height: 30px;
-
-        }
-    </style>
+    <title>JavaScript DOM Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+
+    <h2>Modify Image Attributes</h2>
+    <img id="myImage" src="https://via.placeholder.com/150" alt="Placeholder Image" width="150">
+    <button onclick="changeImage()">Change Image</button>
+
+    <h2>Event Handling</h2>
+    <p id="text">Click the button to change this text.</p>
+    <button id="changeTextBtn">Change Text</button>
+
+    <h2>Dynamic Class Manipulation</h2>
+    <p id="classText">Click the button to highlight this text.</p>
+    <button id="toggleClassBtn">Toggle Class</button>
+
+    <h2>Toggle Visibility</h2>
+    <div id="toggleDiv">This element will be shown/hidden.</div>
+    <button id="toggleVisibilityBtn">Toggle Visibility</button>
+
+    <script src="script.js"></script>
+
 </body>
-<script src="index.js"></script>
 </html>
